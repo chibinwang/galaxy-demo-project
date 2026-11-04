@@ -79,7 +79,7 @@ export default function Exceptions() {
             title="Detected exceptions"
             subtitle={ex.data ? `${ex.data.items.length} for ${fmtShortDate(ex.data.date)} · ${untracked} without an owner` : undefined}
             action={
-              <Select value={sevFilter} onChange={(e) => setSevFilter(e.target.value as Severity | '')} className="h-8 w-28 shrink-0 text-xs">
+              <Select value={sevFilter} onChange={(e) => setSevFilter(e.target.value as Severity | '')} className="h-8 w-32 shrink-0 text-xs">
                 <option value="">All severities</option>
                 <option value="critical">Critical</option>
                 <option value="high">High</option>

@@ -17,6 +17,11 @@ body { background: #f4f5f7; color: #0f172a; -webkit-font-smoothing: antialiased;
 
 .num { font-variant-numeric: tabular-nums; }
 
+/* Form-field default size; in the components layer so per-use utilities (h-8, w-28, text-xs…) override it. */
+@layer components {
+  .field { @apply h-9 w-full text-sm; }
+}
+
 @media print {
   aside, header, .no-print { display: none !important; }
   main { padding: 0 !important; }
