@@ -1,0 +1,24 @@
+# Dependencies & build output
+node_modules
+dist
+coverage
+*.tsbuildinfo
+
+# Runtime demo data (regenerated on first run / via `npm run seed`)
+data/*.json
+data/files/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
